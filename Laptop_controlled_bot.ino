@@ -1,13 +1,13 @@
-#Code for laptop controlled bot. Give commands from the serial monitor of the arduino IDE
+#Code for laptop controlled bot. Give commands from the serial monitor of the Arduino IDE
 
-int motorL[]={3,2};  
+int motorL[]={3,2};  //Assigning motor pins for the left and right motors
 int motorR[]={5,4};
 int movement;
 int flag=0;
 
 void setup() 
 {
-Serial.begin(9600);
+Serial.begin(9600); //Baud rate
 
         pinMode(motorL[0],OUTPUT);
         pinMode(motorL[1],OUTPUT);
@@ -16,11 +16,7 @@ Serial.begin(9600);
   
 Serial.println("\tHow to use:-\n\t W-Forward \tS-Backwards\tA-Left\tD-Right "  );
 
-
-
-
 }   
-
 
 
 void loop() 
